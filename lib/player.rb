@@ -1,9 +1,9 @@
 class Player
-    attr_accessor :name_to_save, :value_to_save
+    attr_accessor :name, :value, :index
 
-    def initialize(name_to_save, value_to_save)
-        @name = name_to_save
-        @value = value_to_save
+    def initialize(name, value, index)
+        @name = name
+        @value = value
+        @index = index
     end
-
 end

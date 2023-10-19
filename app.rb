@@ -6,12 +6,9 @@ require_relative 'lib/player'
 require_relative 'lib/board'
 require_relative 'lib/boardcase'
 require_relative 'lib/show'
+require_relative 'lib/application'
 
-new_board = Board.new
-player1 = Player.new("José","X")
-player2 = Player.new("Joséphine","O")
+Application.new.perform
 
-new_board.play_turn(player1)
-new_board.display_board
 
 binding.pry
